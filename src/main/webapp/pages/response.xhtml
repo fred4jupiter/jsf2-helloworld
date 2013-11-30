@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:greet="http://java.sun.com/jsf/composite/greet"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<ui:composition template="/resources/template/commonLayout.xhtml">
+
+    <ui:define name="title">Response</ui:define>
+
+    <ui:define name="content">
+        <h:form id="responseform">
+            <h2>My name is Duke. What is yours?</h2>
+            <h:graphicImage id="waveImg" name="images/java.gif"/>
+
+            <h2>Hi, #{helloBean.name}</h2>
+
+            <h2><greet:greet who="#{helloBean.name}"/></h2>
+            <h:commandButton id="back" value="Back to hello" action="hello"/>
+        </h:form>
+    </ui:define>
+</ui:composition>
+
+</html>

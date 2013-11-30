@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html" xmlns:composite="http://java.sun.com/jsf/composite">
+<head>
+    <title>My First Composite Component</title>
+</head>
+<body>
+<composite:interface>
+    <composite:attribute name="who"/>
+</composite:interface>
+
+<composite:implementation>
+    <h3>
+        <h:outputText value="Hello #{cc.attrs.who} from composite!"/>
+    </h3>
+</composite:implementation>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html" xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<ui:composition template="/resources/template/commonLayout.xhtml">
+
+    <ui:define name="title">Hello World!</ui:define>
+
+    <ui:define name="content">
+        <h2>My name is Duke. What is yours?</h2>
+        <h:form id="helloForm">
+            <h:graphicImage id="waveImg" name="images/java.gif"/>
+            <h:inputText id="username" value="#{helloBean.name}"/>
+            <h:commandButton id="submit" action="response" value="Submit"/>
+        </h:form>
+    </ui:define>
+</ui:composition>
+
+</html>

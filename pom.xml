@@ -4,7 +4,7 @@
 
     <groupId>com.sun.faces</groupId>
     <artifactId>jsf2-helloworld</artifactId>
-    <version>1.0</version>
+    <version>1.1</version>
 
     <packaging>war</packaging>
 

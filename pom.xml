@@ -45,6 +45,11 @@
                 <artifactId>maven-failsafe-plugin</artifactId>
                 <version>2.16</version>
             </plugin>
+            <plugin>
+                <groupId>com.atlassian.maven.plugins</groupId>
+                <artifactId>maven-jgitflow-plugin</artifactId>
+                <version>1.0-alpha26</version>
+            </plugin>
         </plugins>
     </build>
 

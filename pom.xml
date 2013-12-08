@@ -162,5 +162,17 @@
         </profile>
     </profiles>
 
+    <distributionManagement>
+        <repository>
+            <id>mint-vm-release</id>
+            <name>mint-vm-releases</name>
+            <url>http://mint-vm:8081/artifactory/ext-release-local</url>
+        </repository>
+        <snapshotRepository>
+            <id>mint-vm-snapshots</id>
+            <name>mint-vm-snapshots</name>
+            <url>http://mint-vm:8081/artifactory/ext-snapshot-local</url>
+        </snapshotRepository>
+    </distributionManagement>
 
 </project>

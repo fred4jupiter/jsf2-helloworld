@@ -7,15 +7,20 @@
     <ui:define name="title">Hello World!</ui:define>
 
     <ui:define name="content">
-        <h2>My name is Duke. What is yours?</h2>
+        <h3>My name is Duke. What is yours?</h3>
         <h:form id="helloForm">
             <div class="form-group">
-                <h:graphicImage id="waveImg" name="images/java.gif"/>
-                <p>
-                    <h:inputText id="username" value="#{helloBean.name}"/>
-                </p>
-                <p><h:commandButton id="submit" action="response" value="Submit"/></p>
+                <h:graphicImage id="waveImg" name="images/java.gif" />
             </div>
+            <div class="form-group">
+                <h:outputLabel for="firstname">Firstname</h:outputLabel>
+                <h:inputText styleClass="form-control" id="firstname" value="#{helloBean.firstname}"/>
+            </div>
+            <div class="form-group">
+                <h:outputLabel for="lastname">Lastname</h:outputLabel>
+                <h:inputText styleClass="form-control" id="lastname" value="#{helloBean.lastname}"/>
+            </div>
+            <h:commandButton id="submit" styleClass="btn btn-default" action="response" value="Submit"/>
         </h:form>
     </ui:define>
 </ui:composition>

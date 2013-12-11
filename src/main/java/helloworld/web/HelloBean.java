@@ -1,10 +1,10 @@
 package helloworld.web;
 
+import helloworld.AppInfoProvider;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-import javax.faces.bean.ManagedBean;
-import javax.faces.bean.SessionScoped;
 import java.io.Serializable;
 
 @Component("helloBean")
@@ -13,14 +13,35 @@ public class HelloBean implements Serializable {
 
     private static final long serialVersionUID = 5306205251332638378L;
 
-    private String name;
+    @Autowired
+    private AppInfoProvider appInfoProvider;
 
-    public String getName() {
-        return name;
+    private String firstname;
+
+    private String lastname;
+
+    private AppInfo appInfo;
+
+    public AppInfo getAppInfo() {
+        if (appInfo == null) {
+            appInfo = appInfoProvider.getAppInfo();
+        }
+        return appInfo;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getFirstname() {
+        return firstname;
     }
 
+    public void setFirstname(String firstname) {
+        this.firstname = firstname;
+    }
+
+    public String getLastname() {
+        return lastname;
+    }
+
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
+    }
 }

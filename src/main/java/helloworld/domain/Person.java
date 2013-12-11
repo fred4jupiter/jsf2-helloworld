@@ -1,5 +1,10 @@
 package helloworld.domain;
 
+import org.apache.commons.lang.builder.EqualsBuilder;
+import org.apache.commons.lang.builder.HashCodeBuilder;
+import org.apache.commons.lang.builder.ReflectionToStringBuilder;
+import org.apache.commons.lang.builder.ToStringStyle;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -26,11 +31,30 @@ public class Person {
         this.lastname = lastname;
     }
 
+    public Long getId() {
+        return id;
+    }
+
     public String getFirstname() {
         return firstname;
     }
 
     public String getLastname() {
         return lastname;
+    }
+
+    @Override
+    public int hashCode() {
+        return HashCodeBuilder.reflectionHashCode(this);
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        return EqualsBuilder.reflectionEquals(this, obj);
+    }
+
+    @Override
+    public String toString() {
+        return (new ReflectionToStringBuilder(this, ToStringStyle.MULTI_LINE_STYLE)).toString();
     }
 }

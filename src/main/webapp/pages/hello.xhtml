@@ -9,9 +9,13 @@
     <ui:define name="content">
         <h2>My name is Duke. What is yours?</h2>
         <h:form id="helloForm">
-            <h:graphicImage id="waveImg" name="images/java.gif"/>
-            <h:inputText id="username" value="#{helloBean.name}"/>
-            <h:commandButton id="submit" action="response" value="Submit"/>
+            <div class="form-group">
+                <h:graphicImage id="waveImg" name="images/java.gif"/>
+                <p>
+                    <h:inputText id="username" value="#{helloBean.name}"/>
+                </p>
+                <p><h:commandButton id="submit" action="response" value="Submit"/></p>
+            </div>
         </h:form>
     </ui:define>
 </ui:composition>

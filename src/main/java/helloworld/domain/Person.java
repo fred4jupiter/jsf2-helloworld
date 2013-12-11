@@ -15,6 +15,7 @@ public class Person {
 
     @Id
     @GeneratedValue
+    @Column(name = "ID")
     private Long id;
 
     @Column(name = "FIRST_NAME")
@@ -27,6 +28,12 @@ public class Person {
     }
 
     public Person(String firstname, String lastname) {
+        this.firstname = firstname;
+        this.lastname = lastname;
+    }
+
+    public Person(Long id, String firstname, String lastname) {
+        this.id = id;
         this.firstname = firstname;
         this.lastname = lastname;
     }

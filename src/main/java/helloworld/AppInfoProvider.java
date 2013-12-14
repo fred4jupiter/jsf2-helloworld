@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Component;
 
+import java.io.Serializable;
 import java.util.Properties;
 
 @Component("appInfoProvider")

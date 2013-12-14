@@ -13,7 +13,7 @@ import static org.junit.Assert.*;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = Application.class)
-public class PersonRepositoryTest {
+public class PersonRepositoryIT {
 
     @Autowired
     private PersonRepository personRepository;

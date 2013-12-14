@@ -1,7 +1,8 @@
 package helloworld.web;
 
+import java.io.Serializable;
 
-public class AppInfo {
+public class AppInfo implements Serializable {
 
     private String activeProfiles;
 

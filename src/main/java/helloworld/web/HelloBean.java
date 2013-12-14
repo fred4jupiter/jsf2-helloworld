@@ -9,9 +9,7 @@ import java.io.Serializable;
 
 @Component("helloBean")
 @Scope("session")
-public class HelloBean implements Serializable {
-
-    private static final long serialVersionUID = 5306205251332638378L;
+public class HelloBean {
 
     @Autowired
     private AppInfoProvider appInfoProvider;

@@ -10,6 +10,8 @@
     <ui:define name="title">Response</ui:define>
 
     <ui:define name="content">
+        <greet:greet who="#{helloBean.firstname} #{helloBean.lastname}"/>
+
         <div class="form-group">
             <h:outputLabel for="firstname">Firstname</h:outputLabel>
             <h:outputLabel styleClass="form-control" id="firstname" value="#{helloBean.firstname}"/>

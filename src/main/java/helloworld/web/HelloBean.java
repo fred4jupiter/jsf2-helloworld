@@ -5,8 +5,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
+import javax.faces.bean.ManagedBean;
 import java.io.Serializable;
 
+@ManagedBean
 @Component("helloBean")
 @Scope("session")
 public class HelloBean {

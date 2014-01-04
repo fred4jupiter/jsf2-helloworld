@@ -1,9 +1,5 @@
-package org.openqa.selenium.example;
+package helloworld.web;
 
-import helloworld.Application;
-import helloworld.JettyRunner;
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -11,21 +7,9 @@ import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
 import static org.junit.Assert.assertEquals;
 
-public class HelloFormAT {
+public class HelloFormAcceptanceTest {
 
     private static final String URL = "http://localhost:8080/helloworld/index.html";
-
-    private static org.eclipse.jetty.server.Server jettyServer = null;
-
-    @BeforeClass
-    public static void startJetty() throws Exception {
-        jettyServer = JettyRunner.startJetty(Application.class);
-    }
-
-    @AfterClass
-    public static void stopJetty() {
-        JettyRunner.stopJetty(jettyServer);
-    }
 
     @Test
     public void testCallSimpleWithHtmlUnitDriver() throws Exception {

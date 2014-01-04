@@ -1,5 +1,6 @@
-package org.openqa.selenium.example;
+package helloworld.web;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -8,8 +9,9 @@ import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
 import static org.junit.Assert.assertEquals;
 
-public class GoogleSearchAT {
+public class GoogleSearchAcceptanceTest {
 
+    @Ignore
     @Test
     public void testGoogleSearch() {
         // Create a new instance of the html unit driver

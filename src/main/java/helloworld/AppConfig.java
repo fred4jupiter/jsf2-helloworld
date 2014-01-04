@@ -24,7 +24,7 @@ import java.util.Properties;
 @ComponentScan
 @EnableJpaRepositories
 @EnableTransactionManagement
-public class Application {
+public class AppConfig {
 
     @Bean
     public Properties appInfoProperties() throws IOException {

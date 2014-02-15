@@ -9,7 +9,8 @@ import static org.junit.Assert.assertEquals;
 
 public class HelloFormAcceptanceTest {
 
-    private static final String URL = "http://localhost:8080/helloworld/index.html";
+    // this is the test server
+    private static final String URL = "http://mint-vm:8082/helloworld/index.html";
 
     @Test
     public void testCallSimpleWithHtmlUnitDriver() throws Exception {

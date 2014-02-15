@@ -4,17 +4,23 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import static org.junit.Assert.assertEquals;
 
 public class HelloFormAcceptanceTest {
 
+    private static final Logger LOG = LoggerFactory.getLogger(HelloFormAcceptanceTest.class);
+
     // this is the test server
-    private static final String URL = "http://mint-vm:8082/helloworld/index.html";
+    private static final String URL = "http://mint-vm:8082/jsf2-helloworld/";
 
     @Test
     public void testCallSimpleWithHtmlUnitDriver() throws Exception {
         HtmlUnitDriver driver = new HtmlUnitDriver();
+
+        LOG.debug("testCallSimpleWithHtmlUnitDriver: try to call URL=" + URL);
 
         // And now use this to visit Google
         driver.get(URL);

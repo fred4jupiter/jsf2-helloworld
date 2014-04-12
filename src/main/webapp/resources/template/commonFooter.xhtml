@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:h="http://java.sun.com/jsf/html">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html">
 <body>
 <ui:composition>
     <p></p>
+
     <div class="panel-footer">
         <p>This is default footer</p>
 
         <div class="form-inline">
-            <h:outputText styleClass="form-control" value="#{helloBean.appInfo.buildDate}"/>
-            <h:outputText styleClass="form-control" value="#{helloBean.appInfo.appVersion}"/>
-            <h:outputText styleClass="form-control" value="#{helloBean.appInfo.activeProfiles}" />
+            <h:outputLabel for="buildDate" value="Build Date: "/>
+            <h:outputText id="buildDate" styleClass="form-control" value="#{helloBean.appInfo.buildDate}"/>
+            <h:outputLabel for="version" value="Version: "/>
+            <h:outputText id="version" styleClass="form-control" value="#{helloBean.appInfo.appVersion}"/>
+            <h:outputLabel for="profiles" value="Active Profiles: "/>
+            <h:outputText id="profiles" styleClass="form-control" value="#{helloBean.appInfo.activeProfiles}"/>
         </div>
 
     </div>

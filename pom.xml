@@ -76,6 +76,24 @@
                     </systemProperties>
                 </configuration>
             </plugin>
+            <!-- usage: mvn tomcat7:deploy
+                 Be sure you have this configured in tomcat-users.xml:
+                 <role rolename="manager-script"/>
+                 <user username="deployer" password="deployer" roles="manager-script" />
+            -->
+            <plugin>
+                <groupId>org.apache.tomcat.maven</groupId>
+                <artifactId>tomcat7-maven-plugin</artifactId>
+                <version>2.2</version>
+                <configuration>
+                    <url>http://mint-vm:8082/manager/text</url>
+                    <!--<server>mint-vm-tomcat</server>-->
+                    <username>deployer</username>
+                    <password>deployer</password>
+                    <path>/jsf2-helloworld</path>
+                    <update>true</update>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 

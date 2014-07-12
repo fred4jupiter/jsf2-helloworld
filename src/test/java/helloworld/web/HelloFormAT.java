@@ -7,26 +7,26 @@ import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 public class HelloFormAT {
 
     private static final Logger LOG = LoggerFactory.getLogger(HelloFormAT.class);
 
     // this is the test server
-    private static final String URL = "http://lubuntu-vm:8082/jsf2-helloworld/";
+    private static final String URL = "http://localhost:9090/jsf2-helloworld/";
 
     @Test
     public void testCallSimpleWithHtmlUnitDriver() throws Exception {
         HtmlUnitDriver driver = new HtmlUnitDriver();
 
-        LOG.debug("testCallSimpleWithHtmlUnitDriver: try to call URL=" + URL);
+        LOG.debug("try to call URL=" + URL);
 
-        // And now use this to visit Google
         driver.get(URL);
 
         // Find the text input element by its name
         WebElement firstNameElement = driver.findElement(By.id("helloForm:firstname"));
+        assertNotNull(firstNameElement);
         firstNameElement.sendKeys("Fred");
 
         WebElement lastNameElement = driver.findElement(By.id("helloForm:lastname"));

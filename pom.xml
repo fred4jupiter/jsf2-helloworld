@@ -111,8 +111,8 @@
 					</execution>
 				</executions>
 				<configuration>
-					<doCheck>true</doCheck>
-					<doUpdate>true</doUpdate>
+					<doCheck>false</doCheck>
+					<doUpdate>false</doUpdate>
 					<shortrevisionlength>5</shortrevisionlength>
 				</configuration>
 			</plugin>

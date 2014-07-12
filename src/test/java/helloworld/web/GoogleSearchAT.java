@@ -9,7 +9,7 @@ import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
 import static org.junit.Assert.assertEquals;
 
-public class GoogleSearchAcceptanceTest {
+public class GoogleSearchAT {
 
     @Ignore
     @Test

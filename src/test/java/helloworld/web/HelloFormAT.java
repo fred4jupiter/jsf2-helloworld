@@ -9,12 +9,12 @@ import org.slf4j.LoggerFactory;
 
 import static org.junit.Assert.assertEquals;
 
-public class HelloFormAcceptanceTest {
+public class HelloFormAT {
 
-    private static final Logger LOG = LoggerFactory.getLogger(HelloFormAcceptanceTest.class);
+    private static final Logger LOG = LoggerFactory.getLogger(HelloFormAT.class);
 
     // this is the test server
-    private static final String URL = "http://mint-vm:8082/jsf2-helloworld/";
+    private static final String URL = "http://lubuntu-vm:8082/jsf2-helloworld/";
 
     @Test
     public void testCallSimpleWithHtmlUnitDriver() throws Exception {

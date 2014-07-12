@@ -277,7 +277,7 @@
 								</property>
 							</systemProperties>
 							<includes>
-								<include>**/*AcceptanceTest.java</include>
+								<include>**/*AT.java</include>
 							</includes>
 						</configuration>
 						<executions>

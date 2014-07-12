@@ -113,6 +113,7 @@
 				<configuration>
 					<doCheck>true</doCheck>
 					<doUpdate>true</doUpdate>
+					<shortrevisionlength>5</shortrevisionlength>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -125,7 +126,7 @@
 							<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
 						</manifest>
 						<manifestEntries>
-							<Implementation-Build>$\{buildNumber}</Implementation-Build>
+							<Implementation-Build>${buildNumber}</Implementation-Build>
 						</manifestEntries>
 					</archive>
 				</configuration>

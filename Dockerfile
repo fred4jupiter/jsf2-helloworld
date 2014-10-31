@@ -4,4 +4,4 @@ FROM tutum/tomcat
 
 MAINTAINER Michael Staehler <hamsterhase@gmx.de>
 
-COPY target/jsf2-helloworld-1.2-SNAPSHOT.war ${CATALINA_HOME}/webapps/jsf2-helloworld.war
+COPY target/jsf2-helloworld.war ${CATALINA_HOME}/webapps/jsf2-helloworld.war

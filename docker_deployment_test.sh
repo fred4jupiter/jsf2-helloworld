@@ -5,6 +5,11 @@
 
 # NOTE: Run this script as sudo: sudo docker_deployment_test.sh
 
+# For running sudo from jenkins user you have to edit /etc/sudoers
+#    sudo nano /etc/sudoers
+# add following line at the end:
+#    jenkins ALL= NOPASSWD: ALL
+
 docker build -t mstaehler/jsf2-helloworld .
 docker stop hello_test
 docker rm hello_test

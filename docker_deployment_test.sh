@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# running your local registry
-# sudo docker run -p 5000:5000 -d registry
+# Running your local registry:
+#   sudo docker run -p 5000:5000 -d registry
 
 # NOTE: Run this script as sudo: sudo docker_deployment_test.sh
 

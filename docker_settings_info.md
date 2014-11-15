@@ -11,6 +11,6 @@ The deployment script has to be run as sudo:
 
 	sudo ./docker_deployment_test.sh
 
-For running sudo from the jenkins user the sudo permission has to be added in the `/etc/sudoers` file. Add the  following line at the end:
+For running sudo from the jenkins user the sudo permission has to be added in the `/etc/sudoers` file. Add the following line by opening the file with `sudo visudo`:
 
 	jenkins ALL= NOPASSWD: ALL

@@ -1,6 +1,12 @@
 jsf2-helloworld
 ===============
 
+---
+**NOTE**
+This repository is DEPRECATED!
+---
+
+
 Small demo application with JSF 2 used for a continous delivery demo pipeline.
 
 For running in docker:
